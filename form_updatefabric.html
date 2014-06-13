@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<?php
+	session_unset();
+	?>
+
+<html>
+	<head>
+		<title>Add Fabric Stock</title>
+	</head>
+	<body>
+
+		<h2>Add Fabric Stock</h2>
+
+			<form method="post" action="updatefabric.php">
+			<p>
+				Fabric ID:
+				<input type="text" name="fabric_id"/>
+			</p>
+			<p> 
+				Quantity:
+				<input type="text" name="qty"/>
+			</p>
+			<p> 
+				Date Received (mm/dd/yyyy):
+				<input type="text" name="date_received"/>
+			</p>
+			
+			<input type="submit"  name="submit" value="Submit"/>
+		</form>
+
+
+	</body>
+</html>

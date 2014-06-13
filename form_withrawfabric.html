@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<?php
+	session_unset();
+	?>
+
+<html>
+	<head>
+		<title>Withraw Fabric</title>
+	</head>
+	<body>
+
+		<h2>Withraw Fabric</h2>
+
+			<form method="post" action="withrawfabric.php">
+			<p>
+				Fabric ID:
+				<input type="text" name="fabric_id"/>
+			</p>
+			<p> 
+				Quantity:
+				<input type="text" name="qty"/>
+			</p>
+			<p> 
+				Receiving Department:
+				<select name="receiving_dept">
+					<option value="Sampling">Sampling Dept.</option>
+					<option value="Finishing">Finishing Dept.</option>
+					<option value="Cutting">Cutting Dept.</option>
+					<option value="Sewing">Sewing Dept.</option>
+				</select>
+			</p>
+			<p> 
+				Comment:
+				<input type="text" style="width:200px; height: 300px;" size="250" name="comment"/>
+			</p>
+			<input type="submit"  name="submit" value="Submit"/>
+		</form>
+
+
+	</body>
+</html>

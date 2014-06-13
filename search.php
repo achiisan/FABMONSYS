@@ -1,0 +1,23 @@
+ <?php
+
+$fabric_id = $_POST['fabric_id'];
+
+
+ include 'connectDB.php';
+
+$query = 'SELECT * FROM  fabric_table WHERE FABRIC_ID="'.$fabric_id.'" ';
+
+$result = mysql_query($query, $db) or die ("Error. User not Found.");
+
+$list = mysql_fetch_array($result);
+
+extract($list) or die ("Fabric is not in inventory.");
+
+
+$fabric_name = $FABRIC_NAME;
+$qty_yards = $QTY_YARDS;
+$price_per_qty = $PRICE_PER_QTY;
+
+echo "Fabric Information:<br> FABRIC ID: ".$fabric_id. "<br> FABRIC NAME: " .$fabric_name ."<br> QUANTITY: ". $qty_yards . "<br> PRICE: ". $price_per_qty. "Search Successful. <br>";
+?>
+
