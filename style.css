@@ -1,0 +1,18 @@
+
+#addfabric {
+	display: inline;
+
+}
+#addfabric:active{
+	display: inline;
+}
+
+#action_window {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	display: none;
+	background: green;
+}
